@@ -19,3 +19,12 @@ Route::get('/contacts', function () {
     return view('contacts');
 });
 
+
+
+Route::get('/things', function () {
+    return view('things');
+});
+
+Route::get('/api/things', function () {
+    return DB::table('things')->get();
+});
